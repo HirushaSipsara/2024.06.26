@@ -26,3 +26,39 @@ function SubAction() {
         }
     }
 }
+
+let arrays = [
+    {
+        name:"Hiru",
+        age:18,
+        address:"Godagama"
+    },
+    {
+        name:"Hiru",
+        age:18,
+        address:"Godagama"
+    },
+    12,
+    [
+        {
+            name:"Hiru"
+        },
+        {
+            name:"Vinu"
+        }
+    ],
+    {
+        name:"Hiru",
+        age:18,
+        address:"Godagama"
+    },
+    {},
+    {}
+]
+console.log(arrays);
+console.log(arrays[3]);
+
+arrays.forEach(obj => {
+    console.log(obj.name);
+    console.log(obj['name']);
+})
