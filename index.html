@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        .card-title {
+            color: #17a2b8;
+            font-weight: bold;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        #textx, #guessings {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
 
-<div class="container mt-5">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card shadow">
+            <div class="card shadow-lg">
                 <div class="card-body">
                     <h1 class="card-title text-center" id="heading">Guess The Number</h1>
                     <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Enter a number" id="number">
+                        <input type="number" class="form-control text-center" placeholder="Enter a number" id="number">
                     </div>
                     <div class="text-center">
-                        <input type="button" class="btn btn-primary" value="Enter" id="btn_login_onAction">
+                        <input type="button" class="btn btn-primary btn-lg" value="Enter" id="btn_login_onAction">
                     </div>
-                    <div class="mt-3">
-                        <label id="textx" class="d-block text-center"></label>
-                        <label id="guessings" class="d-block text-center"></label>
+                    <div class="mt-4">
+                        <label id="textx" class="d-block text-center text-info"></label>
+                        <label id="guessings" class="d-block text-center text-success"></label>
                     </div>
                 </div>
             </div>
