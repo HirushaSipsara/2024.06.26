@@ -1,11 +1,8 @@
 console.log(document.getElementById("number"));
 let randomNumber = Math.floor((Math.random() * 10) + 1);
-
-
 let x = 5;
 
 document.getElementById("btn_login_onAction").addEventListener("click", SubAction);
-
 function SubAction() {
     let number = parseInt(document.getElementById("number").value);
 
