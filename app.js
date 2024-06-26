@@ -1,6 +1,6 @@
 console.log(document.getElementById("number"));
 let randomNumber = Math.floor((Math.random() * 10) + 1);
-console.log(randomNumber);
+
 
 let x = 5;
 
