@@ -26,7 +26,6 @@ function SubAction() {
         }
     }
 }
-
 let arrays = [
     {
         name:"Hiru",
